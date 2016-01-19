@@ -15,42 +15,37 @@ module.exports = function(grunt) {
           engine: 'im',
           sizes: [{
             width: 2400,
-            suffix: 'large_2x',
-            quality: 50
-          },
-          {
-            width: 1200,
-            suffix: 'large_1x',
+            suffix: '',
             quality: 50
           },
           {
             width: 1500,
-            suffix: 'medium_2x',
+            suffix: '',
             quality: 50
           },
           {
-            width: 750,
-            suffix: 'medium_1x',
+            width: 1200,
+            suffix: '',
             quality: 50
           },
           {
             width: 1000,
-            suffix: 'small_2x',
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 750,
+            suffix: '',
             quality: 50
           },
           {
             width: 500,
-            suffix: 'small_1x',
+            suffix: '',
             quality: 50
           },
           {
             width: 400,
-            suffix: 'tiny_2x',
-            quality: 50
-          },
-          {
-            width: 400,
-            suffix: 'tiny_1x',
+            suffix: '',
             quality: 50
           }]
         },
@@ -92,7 +87,7 @@ module.exports = function(grunt) {
       },
     },
   });
-  
+
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
