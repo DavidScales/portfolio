@@ -1,0 +1,162 @@
+/* Social Icons */
+
+[class*="zocial-"]:before {
+  display: inline-block;
+  font-family: "zocial", sans-serif;
+  /* text-shadow: 3px 3px 3px #aaa; */
+  width: 3em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+
+}
+
+/* Header */
+.header-text {
+	font-family: "Raleway", sans-serif;
+
+}
+
+
+.header-logo {
+	padding-top: 20px;
+	max-width: 100px;
+
+}
+
+
+.name {
+	font-size: 55px;
+
+}
+
+
+.title{
+	font-size: 20px;
+	margin-top: 10px;
+
+}
+
+
+.main-image {
+	background-color: black;
+	padding-top: 15px;
+
+}
+
+/* Content */
+
+.content-title {
+	background-color: black;
+	font-family: "Raleway", sans-serif;
+	color: white;
+
+}
+
+
+.content {
+	background-color: black;
+	font-family: "Raleway", sans-serif;
+
+}
+
+
+.content a {
+	font-family: "Oswald", sans-serif;
+
+}
+
+/* Navigation bar */
+
+.nav__row {
+    background-color: black;
+    font-family: "Raleway", sans-serif;
+
+}
+
+
+.nav {
+	width: 100%;
+	padding-top: 15px;
+
+}
+
+
+.nav__list {
+	width: 100%;
+	padding-left: 0;
+	margin-bottom: 0;
+
+}
+
+
+.nav__item {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 24%;
+	line-height: 24px;
+
+}
+
+
+.nav a {
+	color: white;
+
+}
+
+
+.menu-row {
+	display: none;
+	padding-bottom: 5px;
+
+}
+
+
+#menu-icon {
+	cursor: pointer;
+
+}
+
+/* Footer */
+
+.footer {
+	background-color: black;
+	text-align: right;
+	border-top: 1px solid #313131;
+	/* padding-top: 15px;
+	padding-bottom: 15px; */
+
+}
+
+/* Miscellaneos */
+ul {
+    list-style: none;
+
+}
+
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+
+h2 {
+	color: white;
+	margin-top: 10px;
+	font-weight: bold;
+
+}
+
+
+h3 {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+

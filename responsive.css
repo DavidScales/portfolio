@@ -1,0 +1,56 @@
+@media screen and (max-width: 315px) {
+	.name {
+		font-size: 25px;
+	}
+	.title {
+		font-size: 15px;
+	}
+	.nav__item {
+		width:49%;
+	}
+
+}
+
+
+@media screen and (max-width: 475px) {
+	.name {
+		font-size: 35px;
+	}
+	.title {
+		font-size: 17px;
+	}
+
+}
+
+
+@media screen and (max-width: 565px) {
+	.name {
+		font-size: 45px;
+	}
+
+}
+
+
+@media screen and (max-width: 767px) and (min-width: 585px) {
+	.container {
+		max-width: 585px;
+		margin-right: auto;
+		margin-left: auto;
+
+	}
+
+}
+
+@media screen and (max-width: 991px) {
+	.nav__row {
+		display: none;
+	}
+	.menu-row {
+		display: block;
+	}
+	.nav__row.open {
+        display: block;
+	}
+
+}
+

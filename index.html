@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<!--
+
+David Scales Portfolio
+2016-01-13
+
+-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap css framework, http://getbootstrap.com/-->
+  	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- fonts from google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <!-- Social Icons from Zocial, http://zocial.smcllns.com/sample.html -->
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"/>
+    <!-- hamburger icon from Fort Awesome, http://fortawesome.github.io/Font-Awesome/get-started/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custom responsive style sheet -->
+    <link rel="stylesheet" href="responsive.css">
+    <!--JQuery JS framework https://jquery.com/-->
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <!--bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- picture element support from picturefill, http://scottjehl.github.io/picturefill/ -->
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+
+    <!-- navigation menu animation -->
+    <script src="js/nav.js" async></script>
+
+    <title>David's Portfolio</title>
+
+  </head>
+
+  <body>
+
+    <!--set main container for viewport-->
+    <div class="container">
+
+      <!--
+
+      header row
+      contains logo image, my name, my title.
+
+      -->
+      <div class="header row">
+        <div class="col-sm-2 col-xs-5">
+          <picture>
+            <source
+              media="(max-width:750px)"
+              srcset="images/veryhandsome-400tiny_1x.jpg 1x, images/veryhandsome-400tiny_2x.jpg 2x">
+            <img class="header-logo img-responsive" src="images/veryhandsome-400tiny_1x.jpg" alt="Very handsome face">
+          </picture>
+        </div>
+        <div class="header-text col-sm-10 col-xs-7 text-uppercase text-right">
+          <h1 class="name">David Scales</h1>
+          <h3 class="title">Aspiring Front-end Ninja</h3>
+        </div>
+      </div>
+
+      <!--
+
+      line break row
+
+      -->
+      <div class="row">
+        <div class="col-md-12">
+            <hr>
+        </div>
+      </div>
+      <!--
+
+      navigation row
+
+      -->
+
+      <div class="row menu-row">
+        <div class="col-md-12 menu-col">
+          <i class="fa fa-bars fa-2x" id="menu-icon"></i>
+        </div>
+      </div>
+
+      <div class="nav__row row">
+        <div class="col-md-12 nav text-center" id="drawer">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Resume</a></li>
+            <li class="nav__item"><a href="#">GitHub</a></li>
+            <li class="nav__item"><a href="https://www.google.com/search?q=pizza">Get Pizza</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--
+
+      main image row
+      contains large image
+
+      -->
+      <div class="main-image row">
+        <div class="col-md-12 col-sm-12">
+          <picture>
+            <source
+            media="(max-width:500px)"
+            srcset="images/mountainswater-500small_1x.jpg 1x, images/mountainswater-1000small_2x.jpg 2x">
+            <source
+            media="(min-width:750px)"
+            srcset="images/mountainswater-1200large_1x.jpg 1x, images/mountainswater-2400large_2x.jpg 2x">
+            <source
+            srcset="images/mountainswater-750medium_1x.jpg 1x, images/mountainswater-1500medium_2x.jpg 2x">
+            <img class="img-responsive" src="images/mountainswater-1200large_1x.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+
+      <!--
+
+      content title
+      describes main content
+
+      -->
+      <div class="content-title row">
+        <div class="col-md-12">
+          <h2>Featured Work</h2>
+        </div>
+      </div>
+
+      <!--
+
+      first content row
+      holds project thumbnails, titles, and links
+
+      -->
+      <div class="content row">
+        <div class="col-md-6 col-sm-6">
+          <img class="img-responsive" src="http://placekitten.com/555/300" data-toggle="modal" data-target="#project1" alt="project image TBD">
+          <h3>Kitteh</h3>
+          <p><a href="#">Link to project</a></p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+          <h3>Kittay</h3>
+          <p><a href="#">Link to project</a></p>
+        </div>
+      </div>
+
+      <!--
+
+      second content row
+      holds project thumbnails, titles, and links
+
+      -->
+      <div class="content row">
+        <div class="col-md-6 col-sm-6">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+          <h3>Kittee</h3>
+          <p><a href="#">Link to project</a></p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+          <h3>Kittn</h3>
+          <p><a href="#">Link to project</a></p>
+        </div>
+      </div>
+
+      <!--
+
+      Footer row
+      holds social media links
+
+      -->
+      <div class="footer row">
+        <div class="col-md-12">
+          <a href="#" class="zocial-facebook"> </a>
+          <a href="#" class="zocial-googleplus"> </a>
+          <a href="#" class="zocial-linkedin"> </a>
+          <a href="#" class="zocial-github"> </a>
+          <a href="#" class="zocial-stackoverflow"> </a>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+  <!-- Modal, from Udacity "Intro to html and css", udacity.com -->
+  <!--
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">This is a modal of project #1</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt="iproject image">
+          This modal (and corresponding project) is still under construction
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+</html>
