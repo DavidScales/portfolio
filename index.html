@@ -47,149 +47,131 @@ David Scales Portfolio
     <!--set main container for viewport-->
     <div class="container">
 
-      <!--
+      <!-- HEADER -->
+      <header>
 
-      header row
-      contains logo image, my name, my title.
-
-      -->
-      <div class="header row">
-        <div class="col-sm-2 col-xs-5">
-          <picture>
-            <source
-              media="(max-width:750px)"
-              srcset="images/veryhandsome-400tiny_1x.jpg 1x, images/veryhandsome-400tiny_2x.jpg 2x">
-            <img class="header-logo img-responsive" src="images/veryhandsome-400tiny_1x.jpg" alt="Very handsome face">
-          </picture>
-        </div>
-        <div class="header-text col-sm-10 col-xs-7 text-uppercase text-right">
-          <h1 class="name">David Scales</h1>
-          <h3 class="title">Aspiring Front-end Ninja</h3>
-        </div>
-      </div>
-
-      <!--
-
-      line break row
-
-      -->
-      <div class="row">
-        <div class="col-md-12">
-            <hr>
-        </div>
-      </div>
-      <!--
-
-      navigation row
-
-      -->
-
-      <div class="row menu-row">
-        <div class="col-md-12 menu-col">
-          <i class="fa fa-bars fa-2x" id="menu-icon"></i>
-        </div>
-      </div>
-
-      <div class="nav__row row">
-        <div class="col-md-12 nav text-center" id="drawer">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#">Resume</a></li>
-            <li class="nav__item"><a href="#">GitHub</a></li>
-            <li class="nav__item"><a href="https://www.google.com/search?q=pizza">Get Pizza</a></li>
-            <li class="nav__item"><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!--
-
-      main image row
-      contains large image
-
-      -->
-      <div class="main-image row">
-        <div class="col-md-12 col-sm-12">
-          <picture>
-            <source
-            media="(max-width:500px)"
-            srcset="images/mountainswater-500small_1x.jpg 1x, images/mountainswater-1000small_2x.jpg 2x">
-            <source
-            media="(min-width:750px)"
-            srcset="images/mountainswater-1200large_1x.jpg 1x, images/mountainswater-2400large_2x.jpg 2x">
-            <source
-            srcset="images/mountainswater-750medium_1x.jpg 1x, images/mountainswater-1500medium_2x.jpg 2x">
-            <img class="img-responsive" src="images/mountainswater-1200large_1x.jpg" alt="">
-          </picture>
-        </div>
-      </div>
-
-      <!--
-
-      content title
-      describes main content
-
-      -->
-      <div class="content-title row">
-        <div class="col-md-12">
-          <h2>Featured Work</h2>
-        </div>
-      </div>
-
-      <!--
-
-      first content row
-      holds project thumbnails, titles, and links
-
-      -->
-      <div class="content row">
-        <div class="col-md-6 col-sm-6">
-          <img class="img-responsive" src="http://placekitten.com/555/300" data-toggle="modal" data-target="#project1" alt="project image TBD">
-          <h3>Kitteh</h3>
-          <p><a href="#">Link to project</a></p>
+        <!-- logo image, my name, my title. -->
+        <div class="header row">
+          <div class="col-sm-2 col-xs-5">
+            <picture>
+              <source
+                media="(max-width:750px)"
+                srcset="images/veryhandsome-400tiny_1x.jpg 1x, images/veryhandsome-400tiny_2x.jpg 2x">
+              <img class="header-logo img-responsive" src="images/veryhandsome-400tiny_1x.jpg" alt="Very handsome face">
+            </picture>
+          </div>
+          <div class="header-text col-sm-10 col-xs-7 text-uppercase text-right">
+            <h1 class="name">David Scales</h1>
+            <h3 class="title">Aspiring Front-end Ninja</h3>
+          </div>
         </div>
 
-        <div class="col-md-6 col-sm-6">
-          <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
-          <h3>Kittay</h3>
-          <p><a href="#">Link to project</a></p>
-        </div>
-      </div>
-
-      <!--
-
-      second content row
-      holds project thumbnails, titles, and links
-
-      -->
-      <div class="content row">
-        <div class="col-md-6 col-sm-6">
-          <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
-          <h3>Kittee</h3>
-          <p><a href="#">Link to project</a></p>
+        <!-- line break -->
+        <div class="row">
+          <div class="col-md-12">
+              <hr>
+          </div>
         </div>
 
-        <div class="col-md-6 col-sm-6">
-          <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
-          <h3>Kittn</h3>
-          <p><a href="#">Link to project</a></p>
+        <!-- navigation -->
+
+        <!-- hamburger icon -->
+        <div class="row menu-row">
+          <div class="col-md-12 menu-col">
+            <i class="fa fa-bars fa-2x" id="menu-icon"></i>
+          </div>
         </div>
-      </div>
 
-      <!--
+        <!-- nav -->
+        <nav class="nav__row row">
+          <div class="col-md-12 nav text-center" id="drawer">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#">Resume</a></li>
+              <li class="nav__item"><a href="#">GitHub</a></li>
+              <li class="nav__item"><a href="https://www.google.com/search?q=pizza">Get Pizza</a></li>
+              <li class="nav__item"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
 
-      Footer row
-      holds social media links
+      </header>
 
-      -->
-      <div class="footer row">
-        <div class="col-md-12">
-          <a href="#" class="zocial-facebook"> </a>
-          <a href="#" class="zocial-googleplus"> </a>
-          <a href="#" class="zocial-linkedin"> </a>
-          <a href="#" class="zocial-github"> </a>
-          <a href="#" class="zocial-stackoverflow"> </a>
+      <!-- MAIN -->
+      <main>
+
+        <!-- main image row - contains large image -->
+        <section class="main-image row">
+          <div class="col-md-12 col-sm-12">
+            <picture>
+              <source
+              media="(max-width:500px)"
+              srcset="images/mountainswater-500small_1x.jpg 1x, images/mountainswater-1000small_2x.jpg 2x">
+              <source
+              media="(min-width:750px)"
+              srcset="images/mountainswater-1200large_1x.jpg 1x, images/mountainswater-2400large_2x.jpg 2x">
+              <source
+              srcset="images/mountainswater-750medium_1x.jpg 1x, images/mountainswater-1500medium_2x.jpg 2x">
+              <img class="img-responsive" src="images/mountainswater-1200large_1x.jpg" alt="">
+            </picture>
+          </div>
+        </section>
+
+        <!-- content title - describes main content -->
+        <hgroup class="content-title row">
+          <div class="col-md-12">
+            <h2>Featured Work</h2>
+          </div>
+        </hgroup>
+
+        <!-- first content row - holds project thumbnails, titles, and links -->
+        <section class="content row">
+          <div class="col-md-6 col-sm-6">
+            <img class="img-responsive" src="http://placekitten.com/555/300" data-toggle="modal" data-target="#project1" alt="project image TBD">
+            <h3>Kitteh</h3>
+            <p><a href="#">Link to project</a></p>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+            <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+            <h3>Kittay</h3>
+            <p><a href="#">Link to project</a></p>
+          </div>
+        </section>
+
+        <!-- second content row - holds project thumbnails, titles, and links -->
+        <section class="content row">
+          <div class="col-md-6 col-sm-6">
+            <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+            <h3>Kittee</h3>
+            <p><a href="#">Link to project</a></p>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+            <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+            <h3>Kittn</h3>
+            <p><a href="#">Link to project</a></p>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+
+        <!-- footer - holds social media links -->
+        <div class="footer row">
+          <div class="col-md-12">
+            <ul class="nav__list">
+              <li class="footer_item"><a href="#" class="zocial-facebook"></a></li>
+              <li class="footer_item"><a href="#" class="zocial-googleplus"></a></li>
+              <li class="footer_item"><a href="#" class="zocial-linkedin"></a></li>
+              <li class="footer_item"><a href="#" class="zocial-github"></a></li>
+              <li class="footer_item"><a href="#" class="zocial-stackoverflow"></a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+
+      </footer>
 
     </div>
   </body>

@@ -38,36 +38,6 @@
 }
 
 
-.main-image {
-	background-color: black;
-	padding-top: 15px;
-
-}
-
-/* Content */
-
-.content-title {
-	background-color: black;
-	font-family: "Raleway", sans-serif;
-	color: white;
-
-}
-
-
-.content {
-	background-color: black;
-	font-family: "Raleway", sans-serif;
-
-}
-
-
-.content a {
-	font-family: "Oswald", sans-serif;
-
-}
-
-/* Navigation bar */
-
 .nav__row {
     background-color: black;
     font-family: "Raleway", sans-serif;
@@ -117,6 +87,38 @@
 
 }
 
+
+/* Main */
+
+.main-image {
+	background-color: black;
+	padding-top: 15px;
+
+}
+
+
+.content-title {
+	background-color: black;
+	font-family: "Raleway", sans-serif;
+	color: white;
+
+}
+
+
+.content {
+	background-color: black;
+	font-family: "Raleway", sans-serif;
+	color: white;
+
+}
+
+
+.content a {
+	font-family: "Oswald", sans-serif;
+
+}
+
+
 /* Footer */
 
 .footer {
@@ -127,6 +129,13 @@
 	padding-bottom: 15px; */
 
 }
+
+.footer_item {
+	box-sizing: border-box;
+	display: inline-block;
+
+}
+
 
 /* Miscellaneos */
 ul {
@@ -149,13 +158,15 @@ h2 {
 
 }
 
-
+/*
 h3 {
     margin-top: 10px;
     color: white;
     font-weight: bold;
 
 }
+*/
+
 
 
 
