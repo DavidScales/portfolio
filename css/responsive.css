@@ -41,13 +41,3 @@
 		margin-left: auto;
 	}
 }
-/* For the largest screen size, lock the navbar open.
- */
-@media screen and (min-width: 991px) {
-	.nav-row {
-		display: block;
-	}
-	.menu-row {
-		display: none;
-	}
-}

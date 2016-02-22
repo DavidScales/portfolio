@@ -32,10 +32,6 @@
 .nav-row {
     background-color: black;
     font-family: "Raleway", sans-serif;
-    display: none;
-}
-
-.nav-row.open {
     display: block;
 }
 
@@ -61,17 +57,8 @@
 	color: white;
 }
 
-.menu-row {
-	display: block;
-	padding-bottom: 5px;
-}
-
-#menu-icon {
-	cursor: pointer;
-}
 
 /* Main */
-
 .main-image {
 	background-color: black;
 	padding-top: 15px;
