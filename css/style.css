@@ -30,7 +30,7 @@
 
 /* Navigation bar */
 .nav-row {
-    background-color: black;
+    /*background-color: black;*/
     font-family: "Raleway", sans-serif;
     display: block;
 }
@@ -59,19 +59,14 @@
 
 
 /* Main */
-.main-image {
-	background-color: black;
-	padding-top: 15px;
-}
-
 .content-title {
-	background-color: black;
+	/*background-color: black;*/
 	font-family: "Raleway", sans-serif;
 	color: white;
 }
 
 .content {
-	background-color: black;
+	/*background-color: black;*/
 	font-family: "Raleway", sans-serif;
 	color: white;
 }
@@ -83,7 +78,7 @@
 /* Footer */
 
 .footer {
-	background-color: black;
+	/*background-color: black;*/
 	text-align: right;
 	border-top: 1px solid #313131;
 	/* padding-top: 15px;
