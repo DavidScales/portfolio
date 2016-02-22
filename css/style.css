@@ -103,6 +103,10 @@
 	display: inline-block;
 }
 
+.fa {
+	padding: 5px;
+}
+
 /* Miscellaneos */
 ul {
     list-style: none;
