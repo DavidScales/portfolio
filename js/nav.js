@@ -1,6 +1,6 @@
 // navigation menu animation
 var menu_icon = document.querySelector('#menu-icon');
-var drawer = document.querySelector('.nav__row');
+var drawer = document.querySelector('.nav-row');
 
 menu_icon.addEventListener('click', function(e) {
 	drawer.classList.toggle('open');

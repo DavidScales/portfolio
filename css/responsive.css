@@ -1,16 +1,13 @@
-@media screen and (max-width: 315px) {
-	.name {
-		font-size: 25px;
-	}
-	.title {
-		font-size: 15px;
-	}
-	.nav__item {
-		width:49%;
+/* For progressively larger screens, increase the size of
+ * the nav items, my name, my title
+ */
+@media screen and (min-width: 315px) {
+	.nav-item {
+		width:24%;
 	}
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (min-width: 315px) and (max-width: 475px) {
 	.name {
 		font-size: 35px;
 	}
@@ -19,9 +16,21 @@
 	}
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (min-width: 475px) and (max-width: 565px) {
 	.name {
 		font-size: 45px;
+	}
+	.title {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 565px) {
+	.name {
+		font-size: 55px;
+	}
+	.title {
+		font-size: 20px;
 	}
 }
 
@@ -32,15 +41,13 @@
 		margin-left: auto;
 	}
 }
-
-@media screen and (max-width: 991px) {
-	.nav__row {
-		display: none;
-	}
-	.menu-row {
+/* For the largest screen size, lock the navbar open.
+ */
+@media screen and (min-width: 991px) {
+	.nav-row {
 		display: block;
 	}
-	.nav__row.open {
-        display: block;
+	.menu-row {
+		display: none;
 	}
 }
