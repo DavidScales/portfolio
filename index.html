@@ -18,10 +18,6 @@ David Scales Portfolio
     <!-- fonts from google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
-    <!-- Social Icons from Zocial, http://zocial.smcllns.com/sample.html -->
-    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"/>
-    <!-- hamburger icon from Fort Awesome, http://fortawesome.github.io/Font-Awesome/get-started/ -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- custom style sheet -->
     <link rel="stylesheet" href="css/style.css">
     <!-- custom responsive style sheet -->
@@ -37,88 +33,119 @@ David Scales Portfolio
     <div class="container">
 
       <!-- HEADER -->
-      <header>
+      <header class="row">
 
-        <!-- logo image, my name, my title. -->
-        <div class="header row">
-          <div class="col-sm-2 col-xs-5">
-            <img class="header-logo img-responsive" src="images/veryhandsome-400.jpg"
-            srcset=
-              "images/veryhandsome-400.jpg 400w,
-              images/veryhandsome-500.jpg 500w,
-              images/veryhandsome-750.jpg 750w,
-              images/veryhandsome-1000.jpg 1000w,
-              images/veryhandsome-1200.jpg 1200w,
-              images/veryhandsome-1500.jpg 1500w,
-              images/veryhandsome-2400.jpg 2400w"
-            sizes="(max-width: 500px) 30vw, 20vw" alt="Very handsome face">
-          </div>
-
-          <div class="header-text col-sm-10 col-xs-7 text-uppercase text-right">
-            <h1 class="name">David Scales</h1>
-            <h3 class="title">Aspiring Front-end Ninja</h3>
-          </div>
+        <!-- logo -->
+        <div class="header-logo-container col-sm-2 col-xs-4">
+          <img class="header-logo img-responsive" src="images/veryhandsome-400.jpg"
+          srcset=
+            "images/veryhandsome-400.jpg 400w,
+            images/veryhandsome-500.jpg 500w,
+            images/veryhandsome-750.jpg 750w,
+            images/veryhandsome-1000.jpg 1000w,
+            images/veryhandsome-1200.jpg 1200w,
+            images/veryhandsome-1500.jpg 1500w,
+            images/veryhandsome-2400.jpg 2400w"
+          sizes="(max-width: 500px) 30vw, 20vw" alt="Very handsome face">
         </div>
 
-        <!-- line break -->
-        <div class="row">
-          <div class="col-md-12">
-              <hr>
-          </div>
+        <!-- name and title -->
+        <div class="header-text col-sm-10 col-xs-8 text-uppercase text-right">
+          <h1 class="name">David Scales</h1>
+          <h3 class="title">Aspiring Front-end Ninja</h3>
         </div>
-
-        <!-- navigation -->
-        <nav class="nav-row row">
-          <div class="col-md-12 nav text-center" id="drawer">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="#">Resume</a></li>
-              <li class="nav-item"><a href="#">GitHub</a></li>
-              <li class="nav-item"><a href="https://www.google.com/search?q=pizza" target="_blank">Get Pizza</a></li>
-              <li class="nav-item"><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
 
       </header>
+
+      <!-- NAVIGATION -->
+      <nav class="nav-row row">
+        <div class="col-md-12 nav text-center" id="drawer">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="btn btn-default active" href="#" role="button">Projects</a></li>
+            <li class="nav-item"><a class="btn btn-default" href="#" role="button">About</a></li>
+            <li class="nav-item"><a class="btn btn-default" href="#" role="button">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
       <!-- MAIN -->
       <main>
 
-        <!-- content title - describes main content -->
-        <hgroup class="content-title row">
-          <div class="col-md-12">
-            <h2>Featured Work</h2>
-          </div>
-        </hgroup>
-
         <!-- first content row - holds project thumbnails, titles, and links -->
         <section class="content row">
-          <div class="col-md-6 col-sm-6">
-            <img class="img-responsive" src="http://placekitten.com/555/300" data-toggle="modal" data-target="#project1" alt="project image TBD">
-            <h3>Kitteh</h3>
-            <p><a href="#">Link to project</a></p>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
+            <div class="project" id="p1">
+              <a href='#'>
+                <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+                <div class="description">
+                  <h3>Kitteh</h3>
+                  <p> some text description </p>
+                </div>
+              </a>
+            </div>
           </div>
 
-          <div class="col-md-6 col-sm-6">
-            <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
-            <h3>Kittay</h3>
-            <p><a href="#">Link to project</a></p>
-          </div>
-        </section>
-
-        <!-- second content row - holds project thumbnails, titles, and links -->
-        <section class="content row">
-          <div class="col-md-6 col-sm-6">
-            <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
-            <h3>Kittee</h3>
-            <p><a href="#">Link to project</a></p>
+          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
+            <div class="project" id="p2">
+              <a href='#'>
+                <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+                <div class="description">
+                  <h3>Kitteh</h3>
+                  <p> some text description </p>
+                </div>
+              </a>
+            </div>
           </div>
 
-          <div class="col-md-6 col-sm-6">
-            <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
-            <h3>Kittn</h3>
-            <p><a href="#">Link to project</a></p>
+          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
+            <div class="project" id="p3">
+              <a href='#'>
+                <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+                <div class="description">
+                  <h3>Kitteh</h3>
+                  <p> some text description </p>
+                </div>
+              </a>
+            </div>
           </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
+            <div class="project" id="p4">
+              <a href='#'>
+                <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+                <div class="description">
+                  <h3>Kitteh</h3>
+                  <p> some text description </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
+            <div class="project" id="p5">
+              <a href='#'>
+                <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+                <div class="description">
+                  <h3>Kitteh</h3>
+                  <p> some text description </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
+            <div class="project" id="p6">
+              <a href='#'>
+                <img class="img-responsive" src="http://placekitten.com/555/300" alt="project image TBD">
+                <div class="description">
+                  <h3>Kitteh</h3>
+                  <p> some text description </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
         </section>
 
       </main>
@@ -129,12 +156,9 @@ David Scales Portfolio
         <!-- footer - holds social media links -->
         <div class="footer row">
           <div class="col-md-12">
-            <ul class="nav-list">
-              <li class="footer_item"><a href="#" class="zocial-facebook"></a></li>
-              <li class="footer_item"><a href="#" class="zocial-googleplus"></a></li>
-              <li class="footer_item"><a href="#" class="zocial-linkedin"></a></li>
-              <li class="footer_item"><a href="#" class="zocial-github"></a></li>
-              <li class="footer_item"><a href="#" class="zocial-stackoverflow"></a></li>
+            <ul class="footer-list">
+              <li class="footer-item"><a class="btn btn-default" href="#" role="button">LinkedIn</a></li>
+              <li class="footer-item"><a class="btn btn-default" href="#" role="button">GitHub</a></li>
             </ul>
           </div>
         </div>

@@ -1,22 +1,16 @@
 /* For progressively larger screens, increase the size of
  * the nav items, my name, my title
  */
-@media screen and (min-width: 315px) {
-	.nav-item {
-		width:24%;
-	}
-}
-
-@media screen and (min-width: 315px) and (max-width: 475px) {
+@media screen and (min-width: 315px) and (max-width: 490px) {
 	.name {
-		font-size: 35px;
+		font-size: 27px;
 	}
 	.title {
-		font-size: 17px;
+		font-size: 16px;
 	}
 }
 
-@media screen and (min-width: 475px) and (max-width: 565px) {
+@media screen and (min-width: 490px) and (max-width: 595px) {
 	.name {
 		font-size: 45px;
 	}
@@ -25,7 +19,7 @@
 	}
 }
 
-@media screen and (min-width: 565px) {
+@media screen and (min-width: 595px) {
 	.name {
 		font-size: 55px;
 	}
@@ -36,8 +30,14 @@
 
 @media screen and (max-width: 767px) and (min-width: 585px) {
 	.container {
-		max-width: 585px;
 		margin-right: auto;
 		margin-left: auto;
+	}
+}
+
+/* For an exceptionally small screen, shrink buttons */
+@media screen and (max-width: 260px) {
+	.nav a {
+		min-width: 1px;
 	}
 }
