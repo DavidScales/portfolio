@@ -81,6 +81,10 @@ header {
 	font-size: 16px;
 }
 
+.nav a:active {
+	color: black;
+}
+
 
 /* Main */
 
@@ -170,10 +174,16 @@ main {
 	padding-right: 10px;
 }
 
-.footer a {
+.footer a, .footer a:visited {
 	background-color: #212121;
 	color: white;
 }
+
+.footer a:hover {
+	background-color: #E6E6E6;
+	color: black;
+}
+
 
 /* Miscellaneous */
 ul {
