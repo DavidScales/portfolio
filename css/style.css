@@ -10,6 +10,13 @@ body {
 	padding-right: 0px;
 }
 
+@media screen and (max-width: 767px) and (min-width: 585px) {
+	.container {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
 /* Header */
 
 header {
@@ -48,6 +55,37 @@ header {
 	font-size: 15px;
 }
 
+/* For progressively larger screens, increase the size of
+ * the nav items, my name, my title
+ */
+
+@media screen and (min-width: 315px) and (max-width: 490px) {
+	.name {
+		font-size: 27px;
+	}
+	.title {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 490px) and (max-width: 595px) {
+	.name {
+		font-size: 45px;
+	}
+	.title {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 595px) {
+	.name {
+		font-size: 55px;
+	}
+	.title {
+		font-size: 20px;
+	}
+}
+
 
 /* Navigation bar */
 .nav-row {
@@ -83,6 +121,13 @@ header {
 
 .nav a:active {
 	color: black;
+}
+
+/* For an exceptionally small screen, let buttons shrink */
+@media screen and (max-width: 260px) {
+	.nav a {
+		min-width: 1px;
+	}
 }
 
 
