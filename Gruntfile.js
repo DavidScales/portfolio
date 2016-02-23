@@ -14,37 +14,37 @@ module.exports = function(grunt) {
         options: {
           engine: 'im',
           sizes: [{
-            width: 2400,
-            suffix: '',
-            quality: 50
-          },
-          {
-            width: 1500,
-            suffix: '',
-            quality: 50
-          },
-          {
-            width: 1200,
-            suffix: '',
-            quality: 50
-          },
-          {
-            width: 1000,
-            suffix: '',
-            quality: 50
-          },
-          {
-            width: 750,
-            suffix: '',
-            quality: 50
-          },
-          {
-            width: 500,
-            suffix: '',
-            quality: 50
-          },
-          {
             width: 400,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 350,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 300,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 250,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 200,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 150,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 100,
             suffix: '',
             quality: 50
           }]
