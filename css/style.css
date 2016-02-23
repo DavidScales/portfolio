@@ -107,7 +107,7 @@ main {
 .project {
 	border: 1px solid black;
 	border-radius: 10px;
-	background-color: #607D8B;
+	background-color: #FFA726;
 	margin: 20px;
 	max-width: 560px;
 	padding: 5px;
@@ -115,27 +115,27 @@ main {
 }
 
 #p1:hover, #p1:active {
-	background-color: #009688;
+	background-color: #0288D1;
 }
 
 #p2:hover, #p2:active {
-	background-color: #00BCD4;
+	background-color: #0288D1;
 }
 
 #p3:hover, #p3:active {
-	background-color: #9C27B0;
+	background-color: #0288D1;
 }
 
 #p4:hover, #p4:active {
-	background-color: #F44336;
+	background-color: #0288D1;
 }
 
 #p5:hover, #p5:active {
-	background-color: #4CAF50;
+	background-color: #0288D1;
 }
 
 #p6:hover, #p6:active {
-	background-color: #795548;
+	background-color: #0288D1;
 }
 
 .description {
