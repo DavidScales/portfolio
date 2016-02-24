@@ -1,7 +1,6 @@
 /* Overwrite bootstrap's negative margins - causing horizontal scrolling*/
 .row {
-	margin-right: 0px;
-	margin-left: 0px;
+	margin: 0 0 0 0;
 }
 
 /* Body */
@@ -12,38 +11,25 @@ body {
 /* Container */
 .container {
 	width: 100%;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding: 0 0 0 0;
 }
 
-@media screen and (max-width: 767px) and (min-width: 585px) {
-	.container {
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
 
 /* Header */
 
 header {
 	background-color: #212121;
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-bottom: 10px;
+	padding: 0 10px 10px 10px;
 }
 
 .header-text {
 	font-family: "Raleway", sans-serif;
-	padding-left: 0px;
-	padding-right: 15px;
-	padding-top: 15px;
-	margin-top: 0px;
+	padding: 15px 15px 0 0;
+	margin-top: 0;
 }
 
 .header-logo-container {
-	padding-top: 20px;
-	padding-left: 15px;
-	padding-right: 0px;
+	padding: 20px 0 0 15px;
 }
 
 .header-logo {
@@ -53,8 +39,7 @@ header {
 
 .name {
 	font-size: 25px;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding: 0 0 0 0;
 }
 
 .title{
@@ -139,61 +124,30 @@ header {
 
 
 /* Main */
-
-/*main {
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: #C1C1C1;
-	border:	1px solid black;
-}
-*/
 .content {
 	font-family: "Raleway", sans-serif;
-
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: #C1C1C1;
+	padding: 0 20px 0 20px;
+	background-color: #c1c1c1;
 	border:	1px black;
 	border-style: solid none solid none;
 }
 
 .project-container {
-	padding-right: 0px;
-	padding-left: 0px;
+	padding: 0 0 0 0;
 }
 
 .project {
 	border: 1px solid black;
 	border-radius: 10px;
-	background-color: #FFA726;
+	background-color: #ffa726;
 	margin: 20px;
 	max-width: 560px;
 	padding: 5px;
 	box-shadow: 2px 2px 2px #464646;
 }
 
-#p1:hover, #p1:active {
-	background-color: #0288D1;
-}
-
-#p2:hover, #p2:active {
-	background-color: #0288D1;
-}
-
-#p3:hover, #p3:active {
-	background-color: #0288D1;
-}
-
-#p4:hover, #p4:active {
-	background-color: #0288D1;
-}
-
-#p5:hover, #p5:active {
-	background-color: #0288D1;
-}
-
-#p6:hover, #p6:active {
-	background-color: #0288D1;
+.project:hover, .project:active {
+	background-color: #0288d1;
 }
 
 .description {
@@ -239,7 +193,7 @@ header {
 }
 
 .footer a:hover {
-	background-color: #E6E6E6;
+	background-color: #e6e6e6;
 	color: black;
 }
 
@@ -250,5 +204,5 @@ ul {
 }
 
 h3 {
-	margin-top: 0px;
+	margin-top: 0;
 }
