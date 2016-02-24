@@ -1,3 +1,9 @@
+/* Overwrite bootstrap's negative margins - causing horizontal scrolling*/
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
 /* Body */
 body {
 	color: white;
@@ -92,7 +98,8 @@ header {
     background-color: #424242;
     font-family: "Raleway", sans-serif;
     display: block;
-    border: 1px solid white;
+    border: 1px white;
+    border-style: solid none solid none;
 }
 
 .nav {
@@ -133,15 +140,21 @@ header {
 
 /* Main */
 
-main {
+/*main {
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: #C1C1C1;
 	border:	1px solid black;
 }
-
+*/
 .content {
 	font-family: "Raleway", sans-serif;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #C1C1C1;
+	border:	1px black;
+	border-style: solid none solid none;
 }
 
 .project-container {
@@ -206,7 +219,8 @@ main {
 .footer {
 	background-color: #212121;
 	text-align: right;
-	border: 1px solid white;
+	border: 1px white;
+	border-style: solid none solid none;
 }
 
 .footer-list {
