@@ -61,7 +61,7 @@ module.exports = function(grunt) {
     /* Resize and optimize images with ImageMagick
     https://github.com/andismith/grunt-responsive-images */
     responsive_images: {
-      dev: {
+      logo: { // first set for logo image
         options: {
           engine: 'im',
           sizes: [{
@@ -104,7 +104,60 @@ module.exports = function(grunt) {
         /* Set source image file types and directory. Set destination image directory */
         files: [{
           expand: true,
-          src: ['*.{gif,jpg,png,jpeg}'],
+          src: ['veryhandsome.{gif,jpg,png,jpeg}'],
+          cwd: 'images_src/',
+          dest: 'images/'
+        }]
+      },
+      thumbnails: { // second set for project thumbnails
+        options: {
+          engine: 'im',
+          sizes: [{
+            width: 300,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 400,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 500,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 600,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 700,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 800,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 900,
+            suffix: '',
+            quality: 50
+          },
+          {
+            width: 1000,
+            suffix: '',
+            quality: 50
+          }]
+        },
+
+        /* Set source image file types and directory. Set destination image directory */
+        files: [{
+          expand: true,
+          src: ['*thumbnail.{gif,jpg,png,jpeg}'],
           cwd: 'images_src/',
           dest: 'images/'
         }]

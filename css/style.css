@@ -149,6 +149,8 @@ header {
 	background-color: #c1c1c1;
 	border:	1px black;
 	border-style: solid none solid none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .project-container {
