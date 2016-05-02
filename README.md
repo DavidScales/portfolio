@@ -1,5 +1,5 @@
 # Portfolio
-This is my personal portfolio website, and first significant web development project. The project was an exercise for learning hypertext markup language (HTML5), cascading style sheets (CSS3), and responsive design. I also utilized [Bootstrap], a popular CSS framework, and [Grunt], a command-line task runner.
+This is my personal [portfolio website], and first significant web development project. The project was an exercise for learning hypertext markup language (HTML5), cascading style sheets (CSS3), and responsive design. I also utilized [Bootstrap], a popular CSS framework, and [Grunt], a command-line task runner.
 
 A major goal of the project was responsive and "mobile-first" design. This means that the site not only needs to look good on a wide range of devices, but it also needs to perform well, especially on mobile.
 
@@ -39,6 +39,7 @@ The page still needs work, and will have to be updated with content over time. A
 #### License
 MIT
 
+[portfolio website]: <http://davidscales.github.io/portfolio/>
 [Bootstrap]: <http://getbootstrap.com/css/>
 [Grunt]: <http://gruntjs.com/>
 [GitHub Pages]: <https://pages.github.com/>
