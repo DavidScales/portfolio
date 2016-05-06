@@ -19,8 +19,12 @@ David Scales Portfolio
     <!-- Set favicon -->
     <link rel="shortcut icon" type="image/png" href="images_src/fixed/veryhandsomefavicon.png">
 
-    <!-- Bootstrap css framework - http://getbootstrap.com/ -->
-  	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous">
 
     <!-- Custom style sheet -->
     <link rel="stylesheet" href="css/style.css?__inline=true">
@@ -35,10 +39,12 @@ David Scales Portfolio
     <div class="container-fluid">
 
       <!-- HEADER -->
+
       <header class="row header">
 
         <!-- Logo -->
         <div class="header-logo col-sm-2 col-xs-4">
+
           <!-- Responsive image -->
           <img class="header-logo-img img-responsive" src="images/veryhandsome-200.jpg" srcset="images/veryhandsome-400.jpg 400w, images/veryhandsome-350.jpg 350w, images/veryhandsome-300.jpg 300w, images/veryhandsome-250.jpg 250w, images/veryhandsome-200.jpg 200w, images/veryhandsome-150.jpg 150w, images/veryhandsome-100.jpg 100w" sizes="(max-width: 768px) 34vw, 17vw" alt="Very handsome face">
         </div>
@@ -52,17 +58,45 @@ David Scales Portfolio
       </header>
 
       <!-- NAVIGATION -->
+
       <nav class="nav row">
         <div class="col-md-12 text-center">
           <ul class="nav-list">
-            <li class="nav-item"><a class="btn btn-default active" href="index.html" role="button">Projects</a></li>
-            <li class="nav-item"><a class="btn btn-default" href="about.html" role="button">About</a></li>
-            <li class="nav-item"><a class="btn btn-default" href="contact.html" role="button">Contact</a></li>
+
+            <!-- About button -->
+            <li class="nav-item"><a class="btn btn-default" href="index.html" role="button">About</a></li>
+
+            <!-- Resume button -->
+            <li class="nav-item"><a class="btn btn-default" href="http://davidscales.github.io/FEND-resume/" target="_blank" role="button">Resume</a></li>
+
+            <!-- Contact button - drop down -->
+            <li class="nav-item">
+              <div class="dropdown">
+
+                <!-- The button -->
+                <button
+                  class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Contact
+                  <span class="caret"></span>
+                </button>
+
+                <!-- The drop down list -->
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="https://www.linkedin.com/in/davidscalesengineer" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://github.com/DavidScales?tab=repositories" target="_blank">GitHub</a></li>
+                  <li><a href="mailto:davidsscales@gmail.com?&amp;subject=I%20saw%20your%20portfolio%20today">Email</a></li>
+                </ul>
+
+              </div>
+            </li>
+
           </ul>
         </div>
       </nav>
 
       <!-- MAIN -->
+
       <main class="content row">
 
         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -140,9 +174,9 @@ David Scales Portfolio
       </main>
 
       <!-- FOOTER -->
-      <footer>
 
-        <!-- footer - holds social media links -->
+      <!-- Footer - holds social media links -->
+      <footer>
         <div class="footer row">
           <div class="col-md-12 text-right">
             <ul class="footer-list">
@@ -151,10 +185,23 @@ David Scales Portfolio
             </ul>
           </div>
         </div>
-
       </footer>
 
     </div>
+
+  <!-- jQuery JavaScript -->
+  <script
+    src="https://code.jquery.com/jquery-2.2.3.min.js"
+    integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous">
+  </script>
 
   </body>
 
