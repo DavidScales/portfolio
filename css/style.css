@@ -17,97 +17,89 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
-/* Overwrite bootstrap's negative margins - causing horizontal scrolling*/
-.row {
-	margin: 0 0 0 0;
-}
+/* ******** DEFAULT VIEW IS MOBILE ******** */
 
 /* Body */
 body {
 	color: white;
+	font-family: "Raleway", sans-serif;
 }
 
 /* Container */
-.container {
-	width: 100%;
-	padding: 0 0 0 0;
+.container-fluid {
+
 }
 
 
-/* Header */
+/* HEADER */
 
-header {
+.header {
 	background-color: #212121;
 	padding: 0 10px 10px 10px;
 }
 
+.header-logo {
+	padding: 20px 0 0 15px;
+}
+
+.header-logo-img {
+	max-width: 100px;
+	/*circle image*/
+	border-radius: 50%
+}
+
 .header-text {
-	font-family: "Raleway", sans-serif;
 	padding: 15px 15px 0 0;
 	margin-top: 0;
 }
 
-.header-logo-container {
-	padding: 20px 0 0 15px;
-}
-
-.header-logo {
-	max-width: 100px;
-	border-radius: 50%
-}
-
-.name {
+.header-text-name {
 	font-size: 25px;
-	padding: 0 0 0 0;
 }
 
-.title{
+.header-text-title {
 	font-size: 15px;
+	margin-top: 0;
 }
 
-/* For progressively larger screens, increase the size of
- * the nav items, my name, my title
- */
+/* For progressively larger screens, increase the header font size */
 
 @media screen and (min-width: 315px) and (max-width: 490px) {
-	.name {
+	.header-text-name {
 		font-size: 27px;
 	}
-	.title {
+	.header-text-title {
 		font-size: 16px;
 	}
 }
 
 @media screen and (min-width: 490px) and (max-width: 595px) {
-	.name {
+	.header-text-name {
 		font-size: 45px;
 	}
-	.title {
+	.header-text-title {
 		font-size: 20px;
 	}
 }
 
 @media screen and (min-width: 595px) {
-	.name {
+	.header-text-name {
 		font-size: 55px;
 	}
-	.title {
+	.header-text-title {
 		font-size: 20px;
 	}
 }
 
 
-/* Navigation bar */
-.nav-row {
+/* NAVIGATION */
+
+.nav {
     background-color: #424242;
-    font-family: "Raleway", sans-serif;
     display: block;
     border: 1px white;
     border-style: solid none solid none;
-}
-
-.nav {
-	padding: 10px 15px 10px 15px;
+    padding: 10px 15px 10px 15px;
 }
 
 .nav-list {
@@ -117,10 +109,8 @@ header {
 }
 
 .nav-item {
-	box-sizing: border-box;
 	display: inline-block;
 	width: 32%;
-	line-height: 24px;
 }
 
 .nav a {
@@ -142,19 +132,12 @@ header {
 }
 
 
-/* Main */
+/* MAIN */
+
 .content {
-	font-family: "Raleway", sans-serif;
-	padding: 0 20px 0 20px;
 	background-color: #c1c1c1;
 	border:	1px black;
 	border-style: solid none solid none;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.project-container {
-	padding: 0 0 0 0;
 }
 
 .project {
@@ -171,29 +154,24 @@ header {
 	background-color: #0288d1;
 }
 
-.description {
-	margin: 10px;
-}
-
-.project h3, .project p {
-	margin: 0px;
-}
-
-.project img {
+.project-image {
 	border: 1px solid #707073;
     border-radius: 5px;
 }
 
-.project a {
-	text-decoration: none;
-	color:inherit;
+.project-info {
+	margin: 10px;
+}
+
+.project-info-title, .project-info-description {
+	margin: 0px;
 }
 
 
-/* Footer */
+/* FOOTER */
+
 .footer {
 	background-color: #212121;
-	text-align: right;
 	border: 1px white;
 	border-style: solid none solid none;
 }
@@ -202,28 +180,17 @@ header {
 	padding-top: 10px;
 }
 
-.footer-item {
-	box-sizing: border-box;
+.footer-list-item {
 	display: inline-block;
 	padding-right: 10px;
 }
 
-.footer a, .footer a:visited {
+.footer-list-item-link, .footer-list-item-link:visited {
 	background-color: #212121;
 	color: white;
 }
 
-.footer a:hover {
+.footer-list-item-link:hover {
 	background-color: #e6e6e6;
 	color: black;
-}
-
-
-/* Miscellaneous */
-ul {
-    list-style: none;
-}
-
-h3 {
-	margin-top: 0;
 }

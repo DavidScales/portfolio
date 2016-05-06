@@ -3,19 +3,26 @@
 <!--
 
 David Scales Portfolio
-2016-01-13
+2016-05-06
 
 -->
 <html>
 
   <head>
+
+    <!-- Use unicode -->
     <meta charset="utf-8">
+
+    <!-- Set initial viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon -->
+
+    <!-- Set favicon -->
     <link rel="shortcut icon" type="image/png" href="images_src/fixed/veryhandsomefavicon.png">
-    <!--Bootstrap css framework, http://getbootstrap.com/-->
+
+    <!-- Bootstrap css framework - http://getbootstrap.com/ -->
   	<link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- custom style sheet -->
+
+    <!-- Custom style sheet -->
     <link rel="stylesheet" href="css/style.css?__inline=true">
 
     <title>David's Portfolio</title>
@@ -24,28 +31,29 @@ David Scales Portfolio
 
   <body>
 
-    <!--set main container for viewport-->
-    <div class="container">
+    <!-- Main container for viewport -->
+    <div class="container-fluid">
 
       <!-- HEADER -->
-      <header class="row">
+      <header class="row header">
 
-        <!-- logo -->
-        <div class="header-logo-container col-sm-2 col-xs-4">
-          <img class="header-logo img-responsive" src="images/veryhandsome-200.jpg" srcset="images/veryhandsome-400.jpg 400w, images/veryhandsome-350.jpg 350w, images/veryhandsome-300.jpg 300w, images/veryhandsome-250.jpg 250w, images/veryhandsome-200.jpg 200w, images/veryhandsome-150.jpg 150w, images/veryhandsome-100.jpg 100w" sizes="(max-width: 768px) 34vw, 17vw" alt="Very handsome face">
+        <!-- Logo -->
+        <div class="header-logo col-sm-2 col-xs-4">
+          <!-- Responsive image -->
+          <img class="header-logo-img img-responsive" src="images/veryhandsome-200.jpg" srcset="images/veryhandsome-400.jpg 400w, images/veryhandsome-350.jpg 350w, images/veryhandsome-300.jpg 300w, images/veryhandsome-250.jpg 250w, images/veryhandsome-200.jpg 200w, images/veryhandsome-150.jpg 150w, images/veryhandsome-100.jpg 100w" sizes="(max-width: 768px) 34vw, 17vw" alt="Very handsome face">
         </div>
 
-        <!-- name and title -->
+        <!-- Name and title -->
         <div class="header-text col-sm-10 col-xs-8 text-uppercase text-right">
-          <h1 class="name">David Scales</h1>
-          <h3 class="title">Aspiring Front-end Ninja</h3>
+          <h1 class="header-text-name">David Scales</h1>
+          <h3 class="header-text-title">Aspiring Front-end Ninja</h3>
         </div>
 
       </header>
 
       <!-- NAVIGATION -->
-      <nav class="nav-row row">
-        <div class="col-md-12 nav text-center" id="drawer">
+      <nav class="nav row">
+        <div class="col-md-12 text-center">
           <ul class="nav-list">
             <li class="nav-item"><a class="btn btn-default active" href="index.html" role="button">Projects</a></li>
             <li class="nav-item"><a class="btn btn-default" href="about.html" role="button">About</a></li>
@@ -57,91 +65,77 @@ David Scales Portfolio
       <!-- MAIN -->
       <main class="content row">
 
-      <!-- <div class="row"> -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- Project - holds thumbnail and info -->
+          <div class="project">
+              <!-- potential images sizes are broken into the three views: triple column, double column, single column
+                   Each view sets the size of the image to be the fraction of the page taken up by the column, minus
+                   the margins within and around the columns. eg 3 column view: .333 of the screen, minus 6 + 2 20px margins -->
 
-        <!-- content holds project thumbnails, titles, and links -->
-          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
-            <div class="project">
-              <a href='#'>
-                <!-- potential images sizes are broken into the three views: triple column, double column, single column
-                     Each view sets the size of the image to be the fraction of the page taken up by the column, minus
-                     the margins within and around the columns. eg 3 column view: .333 of the screen, minus 6 + 2 20px margins -->
+              <!-- <img class="img-responsive" src="images/p1thumbnail-500.jpg" srcset="images/p1thumbnail-300.jpg 300w, images/p1thumbnail-400.jpg 400w, images/p1thumbnail-500.jpg 500w, images/p1thumbnail-600.jpg 600w, images/p1thumbnail-700.jpg 700w, images/p1thumbnail-800.jpg 800w, images/p1thumbnail-900.jpg 900w, images/p1thumbnail-1000.jpg 1000w" sizes="(min-width: 992px) calc(.333 * (100vw - 160px)), (min-width: 768px) calc(.5 * (100vw - 80px), calc(100vw - 40px)" alt="project image TBD"> -->
 
-                <!-- <img class="img-responsive" src="images/p1thumbnail-500.jpg" srcset="images/p1thumbnail-300.jpg 300w, images/p1thumbnail-400.jpg 400w, images/p1thumbnail-500.jpg 500w, images/p1thumbnail-600.jpg 600w, images/p1thumbnail-700.jpg 700w, images/p1thumbnail-800.jpg 800w, images/p1thumbnail-900.jpg 900w, images/p1thumbnail-1000.jpg 1000w" sizes="(min-width: 992px) calc(.333 * (100vw - 160px)), (min-width: 768px) calc(.5 * (100vw - 80px), calc(100vw - 40px)" alt="project image TBD"> -->
-
-                <img class="img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
-                <div class="description">
-                  <h3>Kitteh</h3>
-                  <p> some text description </p>
-                </div>
-              </a>
-            </div>
+              <img class="project-image img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
+              <div class="project-info">
+                <h3 class="project-info-title">Kitteh</h3>
+                <p class="project-info-description"> some text description </p>
+              </div>
           </div>
+        </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
-            <div class="project">
-              <a href='#'>
-                <img class="img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
-                <div class="description">
-                  <h3>Kitteh</h3>
-                  <p> some text description </p>
-                </div>
-              </a>
-            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- Project - holds thumbnail and info -->
+          <div class="project">
+              <img class="project-image img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
+              <div class="project-info">
+                <h3 class="project-info-title">Kitteh</h3>
+                <p class="project-info-description"> some text description </p>
+              </div>
           </div>
+        </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
-            <div class="project">
-              <a href='#'>
-                <img class="img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
-                <div class="description">
-                  <h3>Kitteh</h3>
-                  <p> some text description </p>
-                </div>
-              </a>
-            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- Project - holds thumbnail and info -->
+          <div class="project">
+              <img class="project-image img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
+              <div class="project-info">
+                <h3 class="project-info-title">Kitteh</h3>
+                <p class="project-info-description"> some text description </p>
+              </div>
           </div>
+        </div>
 
-        <!-- </div> -->
-        <!-- <div class="row"> -->
-
-          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
-            <div class="project">
-              <a href='#'>
-                <img class="img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
-                <div class="description">
-                  <h3>Kitteh</h3>
-                  <p> some text description </p>
-                </div>
-              </a>
-            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- Project - holds thumbnail and info -->
+          <div class="project">
+              <img class="project-image img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
+              <div class="project-info">
+                <h3 class="project-info-title">Kitteh</h3>
+                <p class="project-info-description"> some text description </p>
+              </div>
           </div>
+        </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
-            <div class="project">
-              <a href='#'>
-                <img class="img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
-                <div class="description">
-                  <h3>Kitteh</h3>
-                  <p> some text description </p>
-                </div>
-              </a>
-            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- Project - holds thumbnail and info -->
+          <div class="project">
+              <img class="project-image img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
+              <div class="project-info">
+                <h3 class="project-info-title">Kitteh</h3>
+                <p class="project-info-description"> some text description </p>
+              </div>
           </div>
+        </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12 project-container">
-            <div class="project">
-              <a href='#'>
-                <img class="img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
-                <div class="description">
-                  <h3>Kitteh</h3>
-                  <p> some text description </p>
-                </div>
-              </a>
-            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- Project - holds thumbnail and info -->
+          <div class="project">
+              <img class="project-image img-responsive" src="http://placekitten.com/500/300" alt="project image TBD">
+              <div class="project-info">
+                <h3 class="project-info-title">Kitteh</h3>
+                <p class="project-info-description"> some text description </p>
+              </div>
           </div>
-
-        <!-- </div> -->
+        </div>
 
       </main>
 
@@ -150,10 +144,10 @@ David Scales Portfolio
 
         <!-- footer - holds social media links -->
         <div class="footer row">
-          <div class="col-md-12">
+          <div class="col-md-12 text-right">
             <ul class="footer-list">
-              <li class="footer-item"><a class="btn btn-default" href="https://www.linkedin.com/in/davidscalesengineer?trk=hp-identity-photo" role="button" target="_blank">LinkedIn</a></li>
-              <li class="footer-item"><a class="btn btn-default" href="https://github.com/DavidScales?tab=repositories" role="button" target="_blank">GitHub</a></li>
+              <li class="footer-list-item"><a class="btn btn-default footer-list-item-link" href="https://www.linkedin.com/in/davidscalesengineer" role="button" target="_blank">LinkedIn</a></li>
+              <li class="footer-list-item"><a class="btn btn-default footer-list-item-link" href="https://github.com/DavidScales?tab=repositories" role="button" target="_blank">GitHub</a></li>
             </ul>
           </div>
         </div>
