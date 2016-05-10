@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+
+David Scales Portfolio
+2016-05-06
+
+-->
+<html>
+
+  <head>
+
+    <!-- Use unicode -->
+    <meta charset="utf-8">
+
+    <!-- Set initial viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/veryhandsomefavicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous">
+
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="css/style.css?__inline=true">
+
+    <!-- Title -->
+    <title>David's Portfolio</title>
+
+  </head>
+
+  <body>
+
+    <!-- Main container for viewport -->
+    <div class="container-fluid">
+
+      <!-- HEADER -->
+
+      <header class="row header">
+
+        <!-- Logo -->
+        <div class="header-logo col-sm-2 col-xs-4">
+
+          <!-- Responsive image -->
+          <img class="header-logo-img
+                      img-responsive" src="images/veryhandsome-200.jpg"
+          srcset="images/veryhandsome-400.jpg 400w,
+                  images/veryhandsome-300.jpg 300w,
+                  images/veryhandsome-200.jpg 200w"
+          sizes="100px" alt="Very handsome face">
+        </div>
+
+        <!-- Name and title -->
+        <div class="header-text col-sm-10 col-xs-8 text-uppercase text-right">
+          <h1 class="header-text-name">David Scales</h1>
+          <h3 class="header-text-title">Aspiring Front-end Ninja</h3>
+        </div>
+
+      </header>
+
+      <!-- NAVIGATION -->
+
+      <nav class="nav row">
+        <div class="col-md-12 text-center">
+          <ul class="nav-list">
+
+            <!-- About button -->
+            <li class="nav-list-item">
+              <button type="button" class="btn btn-default nav-list-item-link"
+                      data-toggle="modal" data-target="#aboutModal">
+                      About
+              </button>
+            </li>
+
+            <!-- Resume button -->
+            <li class="nav-list-item">
+              <a class="btn btn-default nav-list-item-link"
+                 href="http://davidscales.github.io/FEND-resume/"
+                 target="_blank" role="button">
+                 Resume
+              </a>
+            </li>
+
+            <!-- Contact button - Bootstrap drop down -->
+            <li class="nav-list-item">
+              <div class="dropdown">
+
+                <!-- The button -->
+                <button
+                  class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Contact
+                  <span class="caret"></span>
+                </button>
+
+                <!-- The drop down list -->
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li>
+                    <a href="https://www.linkedin.com/in/davidscalesengineer"
+                       target="_blank">
+                      LinkedIn
+                     </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/DavidScales?tab=repositories"
+                       target="_blank">
+                      GitHub
+                     </a>
+                  </li>
+                  <li>
+                    <a href="mailto:davidsscales@gmail.com?&amp;subject=I%20saw%20your%20portfolio%20today">
+                      Email
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <!-- MAIN -->
+
+      <main class="content row">
+
+        <!-- The projects are populated dynamically by JavaScript -->
+
+      </main>
+
+      <!-- FOOTER -->
+
+      <!-- Footer - holds social media links -->
+      <footer>
+        <div class="footer row">
+          <div class="col-md-12 text-right">
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a class="btn btn-default footer-list-item-link"
+                   href="https://www.linkedin.com/in/davidscalesengineer"
+                   role="button" target="_blank">
+                  LinkedIn
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a class="btn btn-default footer-list-item-link"
+                   href="https://github.com/DavidScales?tab=repositories"
+                   role="button" target="_blank">
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ABOUT modal, boostrap -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog"
+         aria-labelledby="aboutModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="aboutModalLabel">About Me</h4>
+          </div>
+          <div class="modal-body">
+            I like learning and exploring technology. I graduated top of my class
+             in engineering, researched at NASA, started a business, and now I've
+              learned to program. I adapt quickly and communicate professionally,
+              but most importantly I'm funny and people like working with me.
+            <br><br>
+            I’m interested in front end web development and have built responsive
+            single page applications (SPA’s) with major industry tools like JavaScript,
+            HTML5, CSS3, version control (Git &amp; GitHub), Grunt, and AJAX, utilizing
+            popular MV* frameworks (like Backbone &amp; Knockout), and standard libraries
+            (like jQuery &amp; Bootstrap).
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- jQuery JavaScript -->
+  <script
+    src="https://code.jquery.com/jquery-2.2.3.min.js"
+    integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Main JS - populates main content, projects -->
+  <script src="js/projects.js?__inline=true"></script>
+
+  </body>
+
+</html>

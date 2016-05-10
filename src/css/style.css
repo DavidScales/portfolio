@@ -1,0 +1,236 @@
+/* Request fonts immediately */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* ******** DEFAULT VIEW IS MOBILE ******** */
+
+/* Body */
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Container */
+.container-fluid {
+
+}
+
+
+/* HEADER */
+
+.header {
+	background-color: white;
+	padding: 0 10px 10px 10px;
+}
+
+.header-logo {
+	padding: 20px 0 0 15px;
+}
+
+.header-logo-img {
+	max-width: 100px;
+	/*circle image*/
+	border-radius: 50%
+}
+
+.header-text {
+	padding: 15px 15px 0 0;
+	margin-top: 0;
+}
+
+.header-text-name {
+	font-size: 25px;
+}
+
+.header-text-title {
+	font-size: 15px;
+	margin-top: 0;
+}
+
+/* For progressively larger screens, increase the header font size */
+
+@media screen and (min-width: 330px) and (max-width: 490px) {
+	.header-text-name {
+		font-size: 27px;
+	}
+	.header-text-title {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 490px) and (max-width: 595px) {
+	.header-text-name {
+		font-size: 45px;
+	}
+	.header-text-title {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 595px) {
+	.header-text-name {
+		font-size: 55px;
+	}
+	.header-text-title {
+		font-size: 20px;
+	}
+}
+
+
+/* NAVIGATION */
+
+.nav {
+    background-color: #2196f3;
+    display: block;
+    border: 1px white;
+    border-style: solid none solid none;
+    padding: 10px 15px 10px 15px;
+}
+
+.nav-list {
+	width: 100%;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.nav-list-item {
+	display: inline-block;
+	width: 32%;
+}
+
+.nav-list-item-link {
+	color: #333;
+	background-color: white;
+	min-width: 84px;
+	font-size: 16px;
+}
+
+/* For an exceptionally small screen, let buttons shrink */
+@media screen and (max-width: 260px) {
+	.nav-list-item-link {
+		min-width: 1px;
+	}
+}
+
+
+/* MAIN */
+
+.content {
+	background-color: #f1f0f0;
+	border:	1px black;
+	border-style: solid none solid none;
+}
+
+.project {
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #f3f3f3;
+	color: #6d6d6d;
+	margin: 20px;
+	max-width: 500px;
+	padding: 5px;
+	box-shadow: 2px 2px 2px #464646;
+}
+
+/*Projects are wrapped in projectWrapLink <a> to activate modal*/
+.projectWrapLink, .projectWrapLink:focus, .projectWrapLink:hover {
+	/*Remove default link formatting*/
+	outline: none;
+	text-decoration: none;
+    color: inherit;
+}
+
+.project:hover, .project:focus {
+	background-color: #d2eefd;
+}
+
+.project-image {
+	border: 1px solid #707073;
+    border-radius: 5px;
+}
+
+.project-info {
+	margin: 10px;
+}
+
+.project-info-title, .project-info-description {
+	margin: 0px;
+}
+
+/*MODAL*/
+
+.modal {
+	color: black;
+}
+
+.modal-column {
+    margin: 0 30px 0 30px;
+}
+
+.modal-skills {
+	margin: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+.modal-skill {
+    display: inline-block;
+    /*Give it a button appearance*/
+    padding: 3px;
+    margin: 1px 5px 1px 5px;
+    border-radius: 5px;
+    background-color: #DEEDF5;
+    color: #607D8B;
+}
+
+.modal-description {
+
+}
+
+.modal-more {
+
+}
+
+.modal-more-btn {
+	margin: 5px;
+}
+
+
+/* FOOTER */
+
+.footer {
+	background-color: #212121;
+	border: 1px white;
+	border-style: solid none solid none;
+}
+
+.footer-list {
+	padding-top: 10px;
+}
+
+.footer-list-item {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.footer-list-item-link, .footer-list-item-link:visited {
+	background-color: #212121;
+	color: white;
+}
+
+.footer-list-item-link:hover {
+	background-color: #e6e6e6;
+	color: black;
+}
