@@ -13,9 +13,9 @@ Responsive design demands that images scale well and look good on every device. 
 
 ## Performance Optimization
 While I am still currently learning optimization techniques, I have applied a few tricks that I've learned from [another project] here:
-- Applying lossless compression reduced the size of logo images by an average of 29%, and the favicon image by 46%.
+- Applying lossless compression reduces image sizes substantially.
 
-- Inlining the site's Google font directly into the main css file reduced the number of render blocking resources, and ensures that the delay for text rendering is minimal. (A browser needs to read and combine all of a page's HTML and CSS before it knows which fonts will be used, and can then send a request for them. While waiting for these requests, however, the browser may not be able to display text. Inlining fonts directly into the page's CSS causes these requests to be sent before the HTML and CSS have been completely analyzed. This ensures that the font files arrive as soon as possible, and that there is a minimal delay for text rendering.)
+- Inlining the site's Google font directly into the main css file reduces the number of render blocking resources, and ensures that the delay for text rendering is minimal. (A browser needs to read and combine all of a page's HTML and CSS before it knows which fonts will be used, and can then send a request for them. While waiting for these requests, however, the browser may not be able to display text. Inlining fonts directly into the page's CSS causes these requests to be sent before the HTML and CSS have been completely analyzed. This ensures that the font files arrive as soon as possible, and that there is a minimal delay for text rendering.)
 
 - Content Delivery Networks (CDN) are optimized for delivering external files like Bootstrap and jQuery, and using these is typically faster at delivering these resources than conventional servers.
 
@@ -23,6 +23,9 @@ While I am still currently learning optimization techniques, I have applied a fe
 
 ## Automation
 A portfolio page will always need work, as it will have to be updated with content over time. As such, it would be very cumbersome to perform these optimization processes by hand. To solve this, I have set up a command line task runner called [Grunt], to automatically resize and optimize the site's images, as well as inline CSS, and minify files.
+
+## Update
+The original project has been updated to utilize JavaScript (JS) to dynamically generate HTML, rather than hard coding it. The JS code retrieves data from JSON objects to populate the site's content.
 
 #### License
 MIT
