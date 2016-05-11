@@ -125,8 +125,15 @@ var projects = [
     // Thumbnail
     'title': 'Dynamic Resume',
     'short': 'A dynamically generated resume',
-    'images_src': 'http://placehold.it/500x300',
-    'images_srcset':'http://placehold.it/500x300 500w',
+    'images_src': 'images/thumbnail_dynamic_resume-300.png',
+    'images_srcset':'images/thumbnail_dynamic_resume-1000.png 1000w, '+
+                    'images/thumbnail_dynamic_resume-900.png 900w, '+
+                    'images/thumbnail_dynamic_resume-800.png 800w, '+
+                    'images/thumbnail_dynamic_resume-700.png 700w, '+
+                    'images/thumbnail_dynamic_resume-600.png 600w, '+
+                    'images/thumbnail_dynamic_resume-500.png 500w, '+
+                    'images/thumbnail_dynamic_resume-400.png 400w, '+
+                    'images/thumbnail_dynamic_resume-300.png 300w ',
 
     /* Potential images sizes are broken into the three views: triple column,
     double column, single column. For each view, the size of the image is the
@@ -153,8 +160,15 @@ var projects = [
     // Thumbnail
     'title': 'Portfolio',
     'short': 'A responsive portfolio site',
-    'images_src': 'http://placehold.it/500x300',
-    'images_srcset':'http://placehold.it/500x300 500w',
+    'images_src': 'images/thumbnail_portfolio-300.png',
+    'images_srcset':'images/thumbnail_portfolio-1000.png 1000w, '+
+                    'images/thumbnail_portfolio-900.png 900w, '+
+                    'images/thumbnail_portfolio-800.png 800w, '+
+                    'images/thumbnail_portfolio-700.png 700w, '+
+                    'images/thumbnail_portfolio-600.png 600w, '+
+                    'images/thumbnail_portfolio-500.png 500w, '+
+                    'images/thumbnail_portfolio-400.png 400w, '+
+                    'images/thumbnail_portfolio-300.png 300w ',
 
     /* Potential images sizes are broken into the three views: triple column,
     double column, single column. For each view, the size of the image is the
@@ -185,8 +199,8 @@ var projects = [
     // Thumbnail
     'title': 'Health Tracker',
     'short': 'A calorie counter application',
-    'images_src': 'http://placehold.it/500x300',
-    'images_srcset':'http://placehold.it/500x300 500w',
+    'images_src': 'http://placekitten.com/500/300',
+    'images_srcset':'http://placekitten.com/500/300 500w',
 
     /* Potential images sizes are broken into the three views: triple column,
     double column, single column. For each view, the size of the image is the
